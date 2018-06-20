@@ -4,7 +4,7 @@ export const getRandomMeal = [
   actions.getRandomMeal,
   {
     success: ({ props, state }) => state.set('currentMeal', props.meal),
-    error: ({ props, state }) => console.log(props.error) // obviously you'll want to handle it correctly..
+    error: ({ props, state }) => console.log(props.error) // obviously this needs better handling
   }
 ]
 

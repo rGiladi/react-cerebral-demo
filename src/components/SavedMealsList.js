@@ -11,10 +11,10 @@ class SavedMealsList extends Component {
     return (
       <div className='saved-meals-list'>
         {savedMeals.map((meal, index) => (
-          <MealItem key={meal.idMeal} meal={meal} onRemove={this.removeMeal} index={index} />
+          <MealItem key={meal.idMeal} meal={meal} index={index} onRemove={this.removeMeal} />
         ))}
         {savedMeals.length === 0 && (
-          <div>You don't have any saved meals yet...</div>
+          <div>No meals have been saved yet...</div>
         )}
       </div>
     );
