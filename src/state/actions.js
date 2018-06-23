@@ -19,7 +19,7 @@ export function saveMeal ({ state, path }) {
 }
 
 export function removeMeal ({ state, props }) {
-  state.splice('savedMeals', props.index)
+  state.splice('savedMeals', props.index, 1)
   return { key: 'savedMeals', data: state.get`savedMeals` }
 }
 
